@@ -1,4 +1,3 @@
-//protobuf_sample.cc
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -55,6 +54,9 @@ std::size_t readFileToByteArray(const std::string& filename, uint8_t** byteArray
     return fileSize;
 }
 
+/**
+ * Print project information, including its title, URL, and developer details.
+*/
 void printProjectInfo(const projectmanagement::Project& project) {
     cout << "Project: " << project.title() << endl;
     cout << "URL: " << project.url() << endl;
